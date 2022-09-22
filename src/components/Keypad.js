@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useEffect, useCallback } from 'react';
 const Keypad = (props) =>{
     const handleClickBigKey = (value) =>{
         console.log('clickEnterDel');
@@ -26,6 +26,28 @@ const Keypad = (props) =>{
     ]
     const Row2 = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'];
     const Row3 = ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'DEL'];
+    // const handleKeyboard  = useCallback((e) =>{
+    //     let letter = String(e.key);
+    //     letter = letter.toUpperCase();
+    //     console.log(letter);
+        
+    //     if (letter.length === 1 && letter.charCodeAt(0) >= 65 && letter.charCodeAt(0) <= 90){
+    //         handleKeypadClick(letter);
+    //     }
+    //     if (letter === 'ENTER' ){
+    //         handleClickBigKey(letter);
+    //     }
+    //     if (letter === 'BACKSPACE'){
+    //         handleClickBigKey('DEL');
+    //     }
+    // })
+    // useEffect(() => {
+    //     document.addEventListener('keydown', handleKeyboard);
+    //     return () => {
+    //         document.removeEventListener('keydown', handleKeyboard);
+    //     };
+    // },[handleKeyboard]);
+
     
     return (
         <div className='keypad'>

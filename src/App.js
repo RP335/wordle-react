@@ -6,9 +6,7 @@ function App() {
   return (
     
     <>
-      <Navbar>
-
-      </Navbar>
+      
       <div className='wordle-app-main'>
         <Game></Game>
       </div>

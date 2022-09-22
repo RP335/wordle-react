@@ -6,9 +6,9 @@ const Words = [
     'TROOP',
     'RECAP',
     'HUMAN',
-    'HOMIE',
-    'SLAYA',
-    'PLAYA',
+    'LONER',
+    'SLEEK',
+    'PLATE',
     'HAPPY',
     'BERTH',
     'HEART',
@@ -26,6 +26,19 @@ const Words = [
     'TABLE',
     'CHAIR',
     'SEDAN',
+    'JOLLY',
+    'GIANT',
+    'SIREN',
+    'MINES',
+    'LINES',
+    'TILES',
+    'PILES',
+    'MILES',
+    'HIVES',
+    'WIVES',
+    'LIVES',
+    'LABOR',
+    
     
 ]
 export default Words;
