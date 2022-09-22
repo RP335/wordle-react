@@ -1,9 +1,31 @@
-import React from 'react';
-export const words = [
-    'lever',
-    'stall',
-    'pitch',
-    'recap',
-    'homie',
-    'money',
+
+const Words = [
+    'LEVER',
+    'STALL',
+    'PITCH',
+    'TROOP',
+    'RECAP',
+    'HUMAN',
+    'HOMIE',
+    'SLAYA',
+    'PLAYA',
+    'HAPPY',
+    'BERTH',
+    'HEART',
+    'START',
+    'GAMES',
+    'PANTS',
+    'FAINT',
+    'STAIN',
+    'PLAIN',
+    'SAINT',
+    'PAINT',
+    'BEANS',
+    'JEANS',
+    'TEENS',
+    'TABLE',
+    'CHAIR',
+    'SEDAN',
+    
 ]
+export default Words;

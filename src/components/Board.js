@@ -4,7 +4,7 @@ const Board = (props) =>{
 
     
     const renderSquare = (value, renderingRow, mainIndex) => {
-       
+
         let color = '';
         
         color = props.prevColoredSquares[mainIndex];
