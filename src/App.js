@@ -8,6 +8,7 @@ function App() {
     <>
       
       <div className='wordle-app-main'>
+        
         <Game></Game>
       </div>
     </>

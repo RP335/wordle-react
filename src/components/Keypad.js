@@ -1,12 +1,11 @@
 import React from 'react';
-import { useEffect, useCallback } from 'react';
 const Keypad = (props) =>{
     const handleClickBigKey = (value) =>{
         console.log('clickEnterDel');
         props.handleClickBigKey(value);
     }
     const handleKeypadClick = ( value) =>{
-        console.log('clicked')
+        
         props.handleClick( value );
     }
     
@@ -15,7 +14,7 @@ const Keypad = (props) =>{
         let color = props.letters[value.charCodeAt(0)-'A'.charCodeAt(0)];
         if (color === 'black')
             color = '#818384'
-        console.log(color);
+        
         return(
             (value === 'ENTER' || value === 'DEL')? <div onClick = {() => handleClickBigKey(value)} className='big-key'>{value}</div> : 
             <div  onClick = {() => handleKeypadClick(value)} className='small-key' style ={{background: `${color}`}}>{value}</div>

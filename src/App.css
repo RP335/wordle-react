@@ -57,13 +57,13 @@ nav h1{
 }
 
 .square {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   border: 1px solid #3A3A3C;
   margin: 4px;
 
@@ -137,7 +137,7 @@ nav h1{
   justify-content: center;
   margin: 0 auto;
   height: 45px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .game {
   margin: 0;
@@ -145,4 +145,30 @@ nav h1{
  
   display: flex;
   flex-direction: column;
+}
+.animated{
+  animation: flip 0.5s ease;
+}
+@keyframes flip {
+  0%{ transform:  scaleY(1); }
+  50%{ transform: scaleY(0); }
+  100%{ transform: scaleY(1); }
+}
+.start-playing-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 45px;
+  font-size: 1rem;
+
+}
+.game-status {
+  color: white;
+  width: 40%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }

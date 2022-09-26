@@ -1,16 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
+
 const Board = (props) =>{
 
-    
+    const sleep = ms => new Promise(
+        resolve => setTimeout(resolve, ms)
+      );
     const renderSquare = (value, renderingRow, mainIndex) => {
 
         let color = '';
         
         color = props.prevColoredSquares[mainIndex];
-            
+       
+        let flip = false;
+        if (props.currRow-1 === renderingRow)
+            flip = true;
+        sleep(2000);
         return (
-            <div className='square' style = {{background :`${color}`}}>{value}</div>
+            !flip? <div className='square' style = {{background :`${color}`}}>{value}</div>:
+            <div className='square animated' style = {{background :`${color}`}}>{value}</div>
         
         )
     }
